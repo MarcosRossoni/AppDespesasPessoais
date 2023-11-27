@@ -1,6 +1,6 @@
 # app_despesas_pessoais
 
-Projeto flutter curso flutter
+A new Flutter project.
 
 ## Getting Started
 
