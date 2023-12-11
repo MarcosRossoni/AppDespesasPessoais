@@ -1,5 +1,4 @@
 import 'package:app_despesas_pessoais/models/transaction.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -28,15 +27,13 @@ class Chart extends StatelessWidget {
       }
 
       DateFormat.E().format(weekDay)[0];
-      
-      print(DateFormat.E().format(weekDay)[0]);
-      print(totalSum);
       return {'day': DateFormat.E().format(weekDay)[0], 'value': totalSum};
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    groupedTransactions;
     return const Card(
       elevation: 6,
       margin: EdgeInsets.all(20),
