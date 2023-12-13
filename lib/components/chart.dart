@@ -34,13 +34,11 @@ class Chart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     groupedTransactions;
-    return const Card(
+    return Card(
       elevation: 6,
       margin: EdgeInsets.all(20),
       child: Row(
-        children: <Widget>[
-
-        ],
+        children: groupedTransactions.map((tr) => Text('${tr['day']}: ${tr['value']}')).toList(),
       )
     );
   }
